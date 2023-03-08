@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD5A721029B8DE9F00DF3779 /* TabUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A720F29B8DE9F00DF3779 /* TabUIView.swift */; };
+		FD5A721229B8DFC000DF3779 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A721129B8DFC000DF3779 /* ListScreen.swift */; };
+		FD5A721429B8DFDE00DF3779 /* OtherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A721329B8DFDE00DF3779 /* OtherScreen.swift */; };
 		FD7A058A29B76A5400E56175 /* DiaryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7A058929B76A5400E56175 /* DiaryAppApp.swift */; };
 		FD7A058C29B76A5400E56175 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7A058B29B76A5400E56175 /* ContentView.swift */; };
 		FD7A058E29B76A5600E56175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7A058D29B76A5600E56175 /* Assets.xcassets */; };
 		FD7A059129B76A5600E56175 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7A059029B76A5600E56175 /* Preview Assets.xcassets */; };
 		FD7A059329B76A5600E56175 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7A059229B76A5600E56175 /* Persistence.swift */; };
 		FD7A059629B76A5600E56175 /* DiaryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD7A059429B76A5600E56175 /* DiaryApp.xcdatamodeld */; };
+		FD7A059F29B76D3600E56175 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD7A05A129B76D3600E56175 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD5A720F29B8DE9F00DF3779 /* TabUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabUIView.swift; sourceTree = "<group>"; };
+		FD5A721129B8DFC000DF3779 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
+		FD5A721329B8DFDE00DF3779 /* OtherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherScreen.swift; sourceTree = "<group>"; };
 		FD7A058629B76A5400E56175 /* DiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7A058929B76A5400E56175 /* DiaryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAppApp.swift; sourceTree = "<group>"; };
 		FD7A058B29B76A5400E56175 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		FD7A059229B76A5600E56175 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FD7A059529B76A5600E56175 /* DiaryApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DiaryApp.xcdatamodel; sourceTree = "<group>"; };
 		FD7A059729B76A5600E56175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7A05A029B76D3600E56175 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD7A05A229B76D6800E56175 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +67,15 @@
 			children = (
 				FD7A058929B76A5400E56175 /* DiaryAppApp.swift */,
 				FD7A058B29B76A5400E56175 /* ContentView.swift */,
+				FD5A720F29B8DE9F00DF3779 /* TabUIView.swift */,
+				FD5A721329B8DFDE00DF3779 /* OtherScreen.swift */,
+				FD5A721129B8DFC000DF3779 /* ListScreen.swift */,
 				FD7A058D29B76A5600E56175 /* Assets.xcassets */,
 				FD7A059229B76A5600E56175 /* Persistence.swift */,
 				FD7A059729B76A5600E56175 /* Info.plist */,
 				FD7A059429B76A5600E56175 /* DiaryApp.xcdatamodeld */,
 				FD7A058F29B76A5600E56175 /* Preview Content */,
+				FD7A05A129B76D3600E56175 /* Localizable.strings */,
 			);
 			path = DiaryApp;
 			sourceTree = "<group>";
@@ -117,6 +130,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = FD7A057D29B76A5400E56175;
 			productRefGroup = FD7A058729B76A5400E56175 /* Products */;
@@ -134,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7A059129B76A5600E56175 /* Preview Assets.xcassets in Resources */,
+				FD7A059F29B76D3600E56175 /* Localizable.strings in Resources */,
 				FD7A058E29B76A5600E56175 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,19 +161,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7A059329B76A5600E56175 /* Persistence.swift in Sources */,
+				FD5A721229B8DFC000DF3779 /* ListScreen.swift in Sources */,
 				FD7A058C29B76A5400E56175 /* ContentView.swift in Sources */,
+				FD5A721029B8DE9F00DF3779 /* TabUIView.swift in Sources */,
 				FD7A058A29B76A5400E56175 /* DiaryAppApp.swift in Sources */,
 				FD7A059629B76A5600E56175 /* DiaryApp.xcdatamodeld in Sources */,
+				FD5A721429B8DFDE00DF3779 /* OtherScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD7A05A129B76D3600E56175 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD7A05A029B76D3600E56175 /* en */,
+				FD7A05A229B76D6800E56175 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FD7A059829B76A5600E56175 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -219,6 +250,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

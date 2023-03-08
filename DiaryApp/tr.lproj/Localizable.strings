@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  DiaryApp
+
+  Created by Ayça Işık on 7.03.2023.
+  
+*/
+
+"app_title" = "Günlük Uygulaması";
+"edit" = "Düzenle";
+"add" = "Ekle";
+"list_tab" = "Listem";
+"other_tab" = "Diğer";
+
+
