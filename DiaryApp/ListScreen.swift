@@ -16,6 +16,7 @@ struct ListScreen: View {
     private var items: FetchedResults<Item>
     
     @State var actionAddDiary: Int? = 0
+    //baslangic degeri 0 tag 1 olunca tıklanınca destination oluyor kısaca mantik..
     
     
     
