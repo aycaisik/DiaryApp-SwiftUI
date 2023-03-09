@@ -28,7 +28,15 @@ struct ListScreen: View {
             }
             List{
                 ForEach(items) { item in
-                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                    VStack{
+                        Text(item.detail  ?? "")
+                        Text(item.title  ?? "")
+                        //bunları add diary de + butonunu ekledıkten sonra yazdık ustteklerı ve vstack alt alta koyar
+                        
+                
+                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                    }
+                    
                     
                 }
                 }

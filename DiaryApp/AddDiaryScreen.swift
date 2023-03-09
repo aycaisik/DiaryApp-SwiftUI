@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AddDiaryScreen: View {
+    @Environment(\.managedObjectContext) private var viewContext
+
     @State var title : String = ""
     @State var description : String = ""
     
@@ -16,9 +18,32 @@ struct AddDiaryScreen: View {
         Form{
             TextField("diary_title",text: $title)
             TextField("diary_description",text: $description)
-        }.navigationTitle(Text("add_diary"))
-       
-        
+        }.navigationBarItems( trailing:
+                                Button(action: {
+            addItem()
+        }, label: {
+            Image(systemName: "plus.square")
+        }))
+    
+        .navigationTitle(Text("add_diary"))
+    }
+    
+    
+    private func addItem() {
+        withAnimation {
+            let newItem = Item(context: viewContext)
+            newItem.timestamp = Date()
+            newItem.title = title
+            newItem.detail = description
+
+            do {
+                try viewContext.save()
+            } catch {
+                let nsError = error as NSError
+                debugPrint(nsError.localizedDescription)
+
+            }
+        }
     }
 }
 
