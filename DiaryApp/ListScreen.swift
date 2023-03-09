@@ -28,13 +28,21 @@ struct ListScreen: View {
             }
             List{
                 ForEach(items) { item in
-                    VStack{
-                        Text(item.detail  ?? "")
-                        Text(item.title  ?? "")
-                        //bunları add diary de + butonunu ekledıkten sonra yazdık ustteklerı ve vstack alt alta koyar
+                    HStack{
+                        //hstack ile emojiyi yana kaydırdık yazının yanına soluna daha dogrusu..
+                        Text(item.emoji ?? "").font(.title)
+                        VStack(alignment: .leading){
+                            //leading ile sola dayadık yazıları.
+                            Text(item.title  ?? "").font(.headline)
+                            Text(item.detail  ?? "").foregroundColor(.secondary)
                         
+                            //bunları add diary de + butonunu ekledıkten sonra yazdık ustteklerı ve vstack alt alta koyar
+                            
+                    
+                            Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        
+                    }
                 
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
                     }
                     
                     

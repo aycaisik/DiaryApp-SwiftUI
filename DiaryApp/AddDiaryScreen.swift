@@ -9,18 +9,29 @@ import SwiftUI
 
 struct AddDiaryScreen: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.presentationMode)  var presentationMode
+    //bu presentation modu ekledık sonra altta add itemin altına yeni
+    //kod satırları ekledık gözat oraya
+    
 
     @State var title : String = ""
     @State var description : String = ""
+    //emoji eklicez
+    @State var emoji : String = ""
+    
     
     
     var body: some View {
         Form{
             TextField("diary_title",text: $title)
             TextField("diary_description",text: $description)
+            TextField("emoji",text: $emoji)
+            
         }.navigationBarItems( trailing:
                                 Button(action: {
             addItem()
+            presentationMode.wrappedValue.dismiss()
+            //bu sayede veri kaydedince bir önceki sayfaya yönlendirildik.
         }, label: {
             Image(systemName: "plus.square")
         }))
@@ -35,6 +46,8 @@ struct AddDiaryScreen: View {
             newItem.timestamp = Date()
             newItem.title = title
             newItem.detail = description
+            newItem.emoji = emoji
+            //soldaki core datadan alıyor sağdaki üstteki state degerine esitliyor.
 
             do {
                 try viewContext.save()
