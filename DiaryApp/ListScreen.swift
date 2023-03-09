@@ -15,11 +15,16 @@ struct ListScreen: View {
         animation: .default)
     private var items: FetchedResults<Item>
     
+    @State var actionAddDiary: Int? = 0
+    
     
     
     var body: some View {
         NavigationView{
             ZStack(alignment: .bottomTrailing){
+                NavigationLink(destination: AddDiaryScreen(), tag: 1, selection:$actionAddDiary){
+                EmptyView()
+            }
             List{
                 ForEach(items) { item in
                     Text("Item at \(item.timestamp!, formatter: itemFormatter)")
@@ -27,6 +32,7 @@ struct ListScreen: View {
                 }
                 }
                 Button{
+                    self.actionAddDiary = 1
                     debugPrint("slm bana tıkladın")
                 }label: {
                     FabButton().padding().padding()
