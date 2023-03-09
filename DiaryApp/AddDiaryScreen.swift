@@ -19,13 +19,24 @@ struct AddDiaryScreen: View {
     //emoji eklicez
     @State var emoji : String = ""
     
+    @State private var showEmojiView = false
+    
     
     
     var body: some View {
         Form{
             TextField("diary_title",text: $title)
             TextField("diary_description",text: $description)
-            TextField("emoji",text: $emoji)
+            Button{
+                self.showEmojiView = true
+                
+            }label: {
+                Text(emoji)
+                Text("emoji")
+            }.sheet(isPresented: $showEmojiView, content:{ EmojiView(txt: $emoji)})
+            
+            
+            //TextField("emoji",text: $emoji)
             
         }.navigationBarItems( trailing:
                                 Button(action: {
