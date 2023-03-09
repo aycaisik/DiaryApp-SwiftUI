@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct AddDiaryScreen: View {
+    @State var title : String = ""
+    @State var description : String = ""
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form{
+            TextField("diary_title",text: $title)
+            TextField("diary_description",text: $description)
+        }.navigationTitle(Text("add_diary"))
+       
+        
     }
 }
 

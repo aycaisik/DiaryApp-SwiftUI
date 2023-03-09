@@ -11,5 +11,8 @@
 "add" = "Add";
 "list_tab" = "List";
 "other_tab" = "Other";
+"add_diary" = "Add Diary";
+"diary_title" = "Title";
+"diary_description" = "Description";
 
 

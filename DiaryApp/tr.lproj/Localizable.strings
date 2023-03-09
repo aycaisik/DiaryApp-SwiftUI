@@ -11,5 +11,9 @@
 "add" = "Ekle";
 "list_tab" = "Listem";
 "other_tab" = "Diğer";
+"add_diary" = "Günlük Ekle";
+"diary_title" = "Başlık";
+"diary_description" = "Açıklama";
+
 
 
