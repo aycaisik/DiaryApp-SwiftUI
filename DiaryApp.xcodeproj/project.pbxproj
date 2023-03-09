@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD2910B029BA14A700381E14 /* FabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2910AF29BA14A700381E14 /* FabButton.swift */; };
 		FD5A721029B8DE9F00DF3779 /* TabUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A720F29B8DE9F00DF3779 /* TabUIView.swift */; };
 		FD5A721229B8DFC000DF3779 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A721129B8DFC000DF3779 /* ListScreen.swift */; };
 		FD5A721429B8DFDE00DF3779 /* OtherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A721329B8DFDE00DF3779 /* OtherScreen.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD2910AF29BA14A700381E14 /* FabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabButton.swift; sourceTree = "<group>"; };
 		FD5A720F29B8DE9F00DF3779 /* TabUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabUIView.swift; sourceTree = "<group>"; };
 		FD5A721129B8DFC000DF3779 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
 		FD5A721329B8DFDE00DF3779 /* OtherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherScreen.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD2910AE29BA147E00381E14 /* subviews */ = {
+			isa = PBXGroup;
+			children = (
+				FD2910AF29BA14A700381E14 /* FabButton.swift */,
+			);
+			path = subviews;
+			sourceTree = "<group>";
+		};
 		FD7A057D29B76A5400E56175 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 		FD7A058829B76A5400E56175 /* DiaryApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD2910AE29BA147E00381E14 /* subviews */,
 				FD7A058929B76A5400E56175 /* DiaryAppApp.swift */,
 				FD7A058B29B76A5400E56175 /* ContentView.swift */,
 				FD5A720F29B8DE9F00DF3779 /* TabUIView.swift */,
@@ -167,6 +178,7 @@
 				FD7A058A29B76A5400E56175 /* DiaryAppApp.swift in Sources */,
 				FD7A059629B76A5600E56175 /* DiaryApp.xcdatamodeld in Sources */,
 				FD5A721429B8DFDE00DF3779 /* OtherScreen.swift in Sources */,
+				FD2910B029BA14A700381E14 /* FabButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
